@@ -9,7 +9,7 @@ class CashRegister
 
   def add_item (item, price, count = 1)
     self.total = price * count + self.total
-    @items.fill(item, @items.size, count) # @item.size will indicate the last position in array and fill count times the valiable 
+    @items.fill(item, @items.size, count) # @item.size will indicate the last position in array and fill count times the valiable
   end
 
   def apply_discount
@@ -19,5 +19,8 @@ class CashRegister
 
   def items
     @items
+  end
+
+  def void_last_transaction
   end
 end
